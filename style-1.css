@@ -1,0 +1,56 @@
+
+p{
+    color: blue;
+}
+
+.mint{
+    background-color: darkorange;
+}
+
+#unique{
+    font-family: monospace;
+    font-weight: bold;
+    color: purple;
+    background-color: yellow;
+}
+
+.pretzel .salt{
+    width: 150px;
+}
+
+p.salt{
+    background-color: lightskyblue;
+}
+
+.pretzel p{
+    border: blue dotted 5px;
+}
+
+div{
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+}
+
+#pink{
+    background-color: lightpink;
+}
+
+#red{
+    background-color: rgb(255, 0, 0);
+}
+
+#blue{
+    background-color: hsl(240, 100%, 50%);
+}
+
+#green{
+    background-color: #00FF00;
+}
+
+.pixel{
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
