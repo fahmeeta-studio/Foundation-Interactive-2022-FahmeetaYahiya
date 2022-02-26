@@ -1,0 +1,129 @@
+.green{
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    border: green solid 1px;
+    border-radius: 50% 50% 0 0;
+    animation: greenscale 5s ease infinite alternate;
+}
+
+@keyframes greenscale {
+    0%{transform: scale3d(0.5, 0.5, 2);}
+    25%{transform: scale3d(0.2, 0.2, 4);}
+    50%{transform: scale3d(1, 1, 1);}
+    100%{transform: scale3d(0.5, 2.0, 1);}
+}
+
+.rainbow{
+    width: 50%;
+    height: 200px;
+    border-radius: 70% 30% 30% 50%;
+    background-color: greenyellow;
+    animation: rainbow-animate 5s ease 4 reverse;
+}
+
+@keyframes rainbow-animate {
+    0%{background-color: blue;}
+    10%{background-color: black;}
+    50%{background-color: pink;}
+    60%{background-color: aqua;}
+    80%{background-color: blueviolet;}
+    90%{background-color: green;}
+    100%{background-color: yellow;}
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background: pink;
+
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    flex-flow: row wrap;
+}
+
+#one{
+    flex: 1;
+    order: 4;
+    height: 50px;
+}
+
+#two{
+    flex: 2;
+    order: 3;
+    height: 100px;
+}
+
+#three{
+    flex: 1;
+    order: 2;
+    height: 150px;
+}
+
+#four{
+    flex: 1;
+    order: 1;
+    height: 200px;
+}
+
+.translated-square {
+    transform: 
+      translateX(20px)  /* move right */
+      translateY(-20px)  /* move down */
+      translateZ(20px);  /* move closer to viewer */
+  }
+  
+  .translated-square-shorthand {
+    transform: translate3d(20px, -20px, 20px);
+  }
+
+
+
+
+  .Rectangle-1{
+    position: relative;
+    left: 20px;
+    background-color: black;
+    stroke-width: 25px;
+    width: 100px; 
+    height: 25px;
+    top: 225px;
+}
+
+.Rectangle-2{
+    position: relative;
+    left: 25px;
+    background-color: black;
+    width: 120px; 
+    height: 25px;
+    transform: rotate(59deg);
+    left: 25px;
+    top: 55px;
+    animation: rainbow-animate 5s ease 4 reverse;
+}
+
+.Rectangle-3{
+    position: relative;
+    left: 50px;
+    background-color: black;
+    width: 125px; 
+    height: 25px;
+    transform: rotate(59deg);
+    left: 100px;
+    top: 40px;
+    animation: rainbow-animate 5s ease 4 reverse;
+}
+
+.Rectangle-4{
+    position: relative;
+    width: 25px;
+    height: 100px;
+    background-color: black;
+    stroke-width: 25px;
+    top: 100px;
+    left: 100px;
+    
+}
