@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(138, 143, 134);
+    animation: color-animate 5s ease 4 reverse;
+}
+
+.square{
+    display:flex;
+    margin: 20px;
+}
+
+@keyframes scale {
+    0%{transform: scale3d(0.5, 0.5, 2);}
+    25%{transform: scale3d(0.5, 0.5, 2);}
+    50%{transform: scale3d(1, 1, 1);}
+    100%{transform: scale3d(0.5, 0.5, 1);}
+}
+
+@keyframes move {
+    25%{transform: translate(25%, 25%);}
+    50%{transform: translate(50%, 50%);}
+    75%{transform: translate(75%, 75%);}
+    100%{transform: translate(0%, 0%)}
+}
+
+#rectangle{
+    width: 80px;
+    height: 320px;
+    background-color: rgb(253, 253, 253);
+    animation: scale 5s ease infinite alternate;
+}
+
+#rectangle-1{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    animation: move 5s ease infinite alternate;
+
+}
+
+#rectangle-2{
+    width: 80px;
+    height: 320px;
+    background-color: rgb(217, 255, 0);
+    animation: position 5s ease infinite alternate;
+
+}
+
+#rectangle-3{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    animation: scale 4s ease infinite alternate;
+}
+
+#rectangle-4{
+    width: 80px;
+    height: 320px;
+    background-color: rgb(107, 110, 103);
+    animation: fadeout 5s ease infinite alternate;
+}
+
+#rectangle-5{
+    width: 80px;
+    height: 320px;
+    background-color: rgb(58, 61, 54);
+    animation: scale 5s ease infinite alternate;
+    
+}
+
+@keyframes color-animate {
+    0%{background-color: rgb(62, 62, 65);}
+    10%{background-color: black;}
+    50%{background-color: rgb(134, 130, 131);}
+    60%{background-color: rgb(210, 219, 219);}
+    80%{background-color: rgb(112, 111, 114);}
+    90%{background-color: rgb(156, 161, 156);}
+    100%{background-color: rgb(75, 75, 62);}
+}
+
+@keyframes fadeout {
+    0% {opacity: 1;}
+    20% {opacity: 0.9;}
+    40% {opacity: 0.5;}
+    60% {opacity: 0.3;}
+    80% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes position {
+    from {
+        position: static;
+        top: auto;
+        left: auto;
+    }
+    to {
+      position: fixed;
+      top: 2%;
+      left: -80%;
+    }
+}
