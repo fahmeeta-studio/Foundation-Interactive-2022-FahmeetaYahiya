@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(255, 0, 140);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.square{
+    width: 250px;
+    height: 50px;
+    background: greenyellow;
+    padding: 5px;
+    background-color: transparentize(white, 0.30);
+    box-shadow: 
+      -1px -1px #ff00f2, 
+      inset -1px -1px 0 0 #ff00f2;
+}
+
+.week{
+    display:flex;
+}
+
+#sunday{
+    height: 50px;
+}
+
+#monday{
+    height: 50px;
+}
+
+#tuesday{
+    height: 50px;
+}
+
+#wednesday{
+    height: 50px;
+}
+  
+.thursday{
+    height: 50px;
+}
+
+.friday{
+    height: 50px;
+}
+
+.saturday{
+    height: 50px;
+}
+  
+  
