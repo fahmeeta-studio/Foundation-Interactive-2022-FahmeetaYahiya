@@ -1,0 +1,24 @@
+.purple{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    display: inline-block;
+}
+
+.space{
+    width: 50%;
+    float: left;
+}
+
+.orange{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+
+}
+
+#container{
+    position: absolute;
+    top: 0px;
+    right: 100px;
+}

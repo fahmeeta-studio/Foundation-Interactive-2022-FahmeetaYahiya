@@ -1,0 +1,45 @@
+.purple{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+}
+
+body{
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) 
+and (max-width: 1024px) 
+and (orientation: landscape){
+    .purple{
+        width: 200px;
+        height: 500px;
+        background-color: pink;
+        border-radius: 50%;
+    }
+
+    p{
+        font-size: 4em;
+        font-family: serif;
+        color: gray;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    /*css goes here*/
+    .purple{
+        width: 100px;
+        height: 500px;
+        background-color: aqua;
+        border-radius: 50%;
+    }
+
+    p{
+        font-size: 1em;
+        font-family: monospace;
+    }
+
+}
+
+
