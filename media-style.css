@@ -1,21 +1,38 @@
-.purple{
-    width: 100px;
-    height: 100px;
-    background-color: purple;
+body {
+    background-color: rgb(0, 204, 255);
+    animation: color-animate 5s;
+    animation-iteration-count: infinite;
 }
 
-body{
-    font-size: 12px;
+.pink{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 0, 255);
+    display: inline-block;
+}
+
+.pink1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 255, 0);
+    display: inline-block;
 }
 
 @media screen and (min-width: 768px) 
 and (max-width: 1024px) 
 and (orientation: landscape){
-    .purple{
-        width: 200px;
-        height: 500px;
-        background-color: pink;
-        border-radius: 50%;
+    .pink{
+        width: 300px;
+        height: 300px;
+        background-color: rgb(0, 0, 0);
+        display: inline-block;
+    }
+
+    .pink1{
+        width: 300px;
+        height: 300px;
+        background-color: rgb(255, 255, 255);
+        display: inline-block;
     }
 
     p{
@@ -27,12 +44,18 @@ and (orientation: landscape){
 
 
 @media screen and (max-width: 768px){
-    /*css goes here*/
-    .purple{
+    .pink{
         width: 100px;
-        height: 500px;
-        background-color: aqua;
-        border-radius: 50%;
+        height: 100px;
+        background-color: rgb(255, 0, 0);
+        display: inline-block;
+    }
+
+    .pink1{
+        width: 300px;
+        height: 300px;
+        background-color: rgb(38, 0, 255);
+        display: inline-block;
     }
 
     p{
@@ -41,5 +64,4 @@ and (orientation: landscape){
     }
 
 }
-
 
