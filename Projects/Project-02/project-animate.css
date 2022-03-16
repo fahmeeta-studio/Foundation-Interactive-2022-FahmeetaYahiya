@@ -10,7 +10,31 @@ body{
     margin: 20px;
 }
 
+#sizes{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    font-family : Avenir;
+    display: inline-block;
+    mix-blend-mode: overlay;
+    margin: 20px;
+}
 
+.button {
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family : Avenir;
+    margin: 10px 5px;
+    cursor: pointer;
+    mix-blend-mode: overlay;
+}
+
+.button1 {background-color: #ec82d5;}
 
 @keyframes scale {
     0%{transform: scale3d(0.5, 0.5, 2);}

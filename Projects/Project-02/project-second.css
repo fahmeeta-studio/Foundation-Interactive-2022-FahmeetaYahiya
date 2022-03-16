@@ -1,4 +1,4 @@
-body {
+body{
     background-color: rgb(255, 0, 140);
     background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 191));
     animation: back-animate 10s;
@@ -36,7 +36,6 @@ body {
 
 .button1 {background-color: #ec82d5;}
 
-
 @keyframes scale {
     0%{transform: scale3d(0.5, 0.5, 2);}
     25%{transform: scale3d(0.5, 0.5, 2);}
@@ -56,45 +55,32 @@ body {
     height: 320px;
     background-color: rgb(255, 0, 149);
     mix-blend-mode: overlay;
+    animation: fadeout 5s ease infinite alternate;
     
 }
 
-#rectangle:hover{
-    animation: move 5s;
-    animation-iteration-count: infinite;
-}
-
 #rectangle-1{
-    width: 80px;
+    width: 100px;
     height: 30px;
     background-color: rgb(0, 0, 0);
     mix-blend-mode: overlay;
-}
-
-#rectangle-1:hover{
-    animation: move 5s ease infinite alternate;
+    animation: fadeout 5s ease infinite alternate;
 }
 
 #rectangle-2{
     width: 80px;
     height: 320px;
     background-color: rgb(200, 255, 0);
-    mix-blend-mode: lighten;
-}
-
-#rectangle-2:hover{
+    mix-blend-mode: overlay;
     animation: fadeout 5s ease infinite alternate;
 }
 
 #rectangle-3{
-    width: 150px;
+    width: 100px;
     height: 30px;
     background-color: rgb(0, 0, 0);
     mix-blend-mode: overlay;
-}
-
-#rectangle-3:hover{
-    animation: move 5s ease infinite alternate;
+    animation: fadeout 5s ease infinite alternate;
 }
 
 #rectangle-6{
@@ -102,21 +88,15 @@ body {
     height: 180px;
     background-color: rgb(255, 0, 149);
     mix-blend-mode: overlay;
+    animation: fadeout 5s ease infinite alternate;
 
-}
-
-#rectangle-6:hover{
-    animation: scale 4s ease infinite alternate;
 }
 
 #rectangle-7{
     width: 80px;
     height: 220px;
     background-color: rgb(200, 255, 0);
-    mix-blend-mode: lighten;
-}
-
-#rectangle-7:hover{
+    mix-blend-mode: overlay;
     animation: fadeout 5s ease infinite alternate;
 }
 
