@@ -1,0 +1,13 @@
+#dog-container{
+    width: 200px;
+    height: 200px;
+    background-image: url(assets/dog.png);
+    background-repeat: no-repeat;
+}
+
+#cat-container{
+    width: 480px;
+    height: 360px;
+    background-image: url(assets/cat.jpg);
+    background-repeat: no-repeat;
+}

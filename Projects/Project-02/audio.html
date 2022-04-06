@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Audio</title>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link href="audio-style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <audio controls>
+            <source src="assets/doorbell.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="bark" controls>
+            <source src="assets/bark.wav" type="audio/mp3">
+        </audio>
+
+        <audio id="meow" controls>
+            <source src="assets/meow.wav" type="audio/mp3">
+        </audio>
+
+        <div id="dog-container"></div>
+        <div id="cat-container"></div>
+        <video id="beachy" src="assets/turbine.mp4"></video>
+    </body>
+    <script>
+        var audio = document.getElementById('bark');
+
+        $('#dog-container').click(function(){
+            audio.play();
+        });
+
+        var meowAudio = document.getElementById('meow');
+
+        var beachVideo = document.getElementById('beachy');
+
+        $('#cat-container').mouseenter(function(){
+            beachVideo.play();
+            $('#cat-container').clone().appendTo('#dog-container');
+        });
+
+
+    </script>
+</html> 
