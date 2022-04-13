@@ -1,0 +1,107 @@
+
+/*DRAGGABLE */
+        #draggable{ 
+          width: 150px;
+          height: 50px;
+          padding: 0.5em;
+          background-color: #000000;
+          font-style: sans-serif;
+          color: #ffffff;
+         }
+
+/*DROPPABLE */
+
+   #droppable, #droppable2, #droppable3, #droppable4{
+           width: 150px;
+          height: 150px;
+          padding: 0.5em;
+          /*background-color: #ffffff;*/
+          border: #000000 1px solid;
+          font-style: sans-serif;
+          color: #000000;
+         }
+
+		#droppable5{
+        width: 150px;
+        height: 150px;
+        padding: 0.5em;
+       }
+
+/*STYLES */
+
+  .blue-border{
+    width: 150px;
+    height: 150px;
+    padding: 0.5em;
+    border: #0000ff 3px solid;
+  }
+
+ #coffeefilter{
+          width: 150px;
+          height: 150px;
+          padding: 0.5em;
+        }
+
+  .sorbet3{
+          background-color: #F7AB8F;
+        }
+
+  .turquoise{
+          background-color: #8FF7DF;
+        }
+
+   #cottoncandy{
+          width: 300px;
+          height: 300px;
+          padding: 0.5em;
+        }
+    .pinkcotton{
+          width: 150px;
+          height: 150px;
+          padding: 0.5em;
+          background-image:
+          linear-gradient(
+             to left, 
+             #FF69B4,
+             #FFB6C1
+            );
+        }
+
+    .pinkcotton2{
+          width: 150px;
+          height: 150px;
+          padding: 0.5em;
+          background-image:
+          linear-gradient(
+             to left, 
+             #FF69B4,
+             #FFB6C1
+            );
+        }
+
+      .rainbow{
+          background-image:
+          linear-gradient(
+              to right, 
+              red, 
+              #f06d06, 
+              rgb(255, 255, 0), 
+              green
+            );
+        }
+
+/*DRAGGABLE */
+    #coffeebeans{
+      width: 150px;
+      height: 150px;
+      padding: 0.5em;
+      background-color: #D2691E;
+    }
+
+/*DROPPABLE */
+        .coffeefilter{
+          width: 150px;
+          height: 150px;
+          padding: 0.5em;
+          border: #A0522D 4px dashed;
+        }

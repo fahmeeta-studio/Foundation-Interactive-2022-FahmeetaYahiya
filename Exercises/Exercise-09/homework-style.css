@@ -1,0 +1,23 @@
+body{
+    background-color: pink;
+}
+
+.small{
+	background-color: rgb(37, 75, 46);
+    width: 25%;
+    height: 300px;
+    
+}
+
+
+.large{
+	background-color: rgb(37, 75, 46);
+    width: 100%;
+    height: 300px;
+}
+
+.medium{
+	background-color: rgb(37, 75, 46);
+    width: 50%;
+    height: 300px;
+}

@@ -1,0 +1,138 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="stylesheet" href="drag-drop.css">
+
+     	<link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+      <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+
+  			
+  		<script>
+    		$(function(){
+
+          $('#draggable').draggable();
+
+          $('#droppable').droppable({
+            drop: function(event, ui){
+              $(this)
+              .addClass("sorbet1")
+              .find("p")
+              .html("Dropped!");
+            }
+          });
+
+    			/*ACCEPT */
+    	      $('#draggable-blue').draggable();
+	          $('#droppable5').droppable({
+	            accept: '.blue-border',
+	            drop: function(event, ui){
+	              $(this)
+	              .addClass("blue-border")
+	              .find("p")
+	              .html("Complete!");
+	            }
+	          });
+
+        /*SCOPE */
+          $('#coffeebeans').draggable({scope:"coffeefilter"});
+          $('#coffeefilter').droppable({
+            scope: 'coffeefilter',
+            drop: function(event, ui){
+              $(this)
+              .addClass("coffeefilter")
+              .find("p")
+              .html("Complete!");
+            }
+          });
+
+        /*TOLERANCE */
+          $('#droppable3').droppable({
+            tolerance: 'touch',
+            drop: function(event, ui){
+              $(this)
+              .addClass("sorbet3")
+              .find("p")
+              .html("Dropped with a touch!");
+            }
+          });
+
+          $('#droppable4').droppable({
+            tolerance: 'fit',
+            drop: function(event, ui){
+              $(this)
+              .addClass("turquoise")
+              .find("p")
+              .html("Dropped only when full fit!");
+            }
+          });
+
+        /*ACTIVE CLASS HOVER CLASS */
+        $('#cottoncandy').droppable({
+            activeClass:"pinkcotton",
+            hoverClass:"rainbow",
+            drop: function(event, ui){
+              $(this)
+              .addClass("pinkcotton2")
+              .find("p")
+              .html("i'm pink!");
+            }
+          });
+
+    	   });		
+
+
+		</script>
+
+	</head>
+
+
+	<body>
+
+    <!--DRAGGABLE -->
+
+  <div id= "draggable" class="ui-widget-content">
+      <p> Drag me around! </p>
+    </div>
+
+
+	<!--ACCEPT -->
+    <div id= "draggable-blue" class="blue-border">
+      <p> Blue Border! </p>
+    </div>
+
+    <div id= "droppable5" class="ui-widget-header">
+      <p> I only accept Blue Border! </p>
+    </div> 
+
+
+
+	<!--SCOPE -->
+    <div id= "coffeebeans">
+      <p> I'm coffee beans looking for coffee filter. </p>
+    </div> 
+
+    <div id= "coffeefilter">
+      <p> I'm coffee filter waiting for coffee beans. </p>
+    </div> 
+
+  <!--TOLERANCE -->
+   <div id= "droppable3" class="ui-widget-header">
+      <p> Tolerance Touch </p>
+    </div>
+
+    <div id= "droppable4" class="ui-widget-header">
+      <p> Tolerance Fit! </p>
+    </div>
+
+  <!--ACTIVE CLASS HOVER CLASS -->
+    <div id= "cottoncandy">
+      <p> waiting for a rainbow to happen... </p>
+    </div> 
+
+	</body>
+</html>
