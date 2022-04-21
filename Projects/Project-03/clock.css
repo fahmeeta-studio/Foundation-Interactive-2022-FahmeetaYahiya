@@ -1,0 +1,83 @@
+:root{
+    --primary: pink;
+    --secondary: yellow;
+    --tertiary: black;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.one{
+    background-color: var(--primary);
+}
+
+.two{
+    background-color: var(--secondary);
+}
+
+.three{
+    background-color: var(--tertiary);
+}
+
+:root{
+    --second: 1s;
+    --minute: calc(var(--second)*60);
+    --hour: calc(var(--minute)*60);
+    --half: calc(var(--hour)*12);
+    --setTimeHour: 4;
+    --setTimeMinute: 40;
+    --timeShiftHour: calc(var(--setTimeHour)*var(--hour));
+    --timeShiftMinute: calc(var(--setTimeMinute)*var(--minute));
+}
+
+@keyframes rotate{
+    from{transform: rotate(0);}
+    to{transform: rotate(1turn);}
+}
+
+@keyframes colorChange {
+    from{background-color: black;}
+    to{background-color: white;}
+}
+
+.clockface{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    position: relative;
+    background-color: aqua;
+    animation: colorChange ease var(--minute) infinite;
+    transform: rotate(180deg);
+}
+
+.seconds{
+    width: 5px;
+    height: 150px;
+    background-color: white;
+    animation: rotate steps(60) var(--minute) infinite;
+}
+
+.minutes{
+    width: 10px;
+    height: 120px;
+    background-color: yellow;
+    animation: rotate steps(60) var(--hour) infinite;
+    animation-delay: calc(var(--timeShiftMinute)*-1);
+
+}
+
+.hours{
+    width: 10px;
+    height: 80px;
+    background-color: gray;
+    animation: rotate steps(12) var(--half) infinite;
+    animation-delay: calc(var(--timeShiftHour)*-1);
+}
+.hand{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: center 0;
+}

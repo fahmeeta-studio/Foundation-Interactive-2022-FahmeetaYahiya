@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(35, 41, 95);
+}
+
+img.sticky{
+    position: sticky;
+    top: 0;
+
+}
+
+#rectangle{
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(35, 41, 95);
+}
+
+#rectangle1{
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(255, 145, 0);
+}
+
+#flying{
+    position: fixed; 
+}
+
+.text {
+    color: rgb(255, 145, 0);
+    font-size: 20px;
+    width: 30%;
+    text-align: left;
+    margin-left: 1150px;
+    margin-right: 50px;
+    font-family : Avenir;
+}
+
+.headtext {
+    color: rgb(255, 145, 0);
+    font-size: 100px;
+    width: 30%;
+    text-align: left;
+    margin-left: 1150px;
+    margin-right: 50px;
+    font-family : Avenir;
+}
