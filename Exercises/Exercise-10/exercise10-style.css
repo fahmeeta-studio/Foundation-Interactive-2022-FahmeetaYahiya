@@ -1,0 +1,87 @@
+body{
+    background-color: black;
+}
+:root{
+    --second: 1s;
+    --minute: calc(var(--second)*60);
+    --hour: calc(var(--minute)*60);
+    --half: calc(var(--hour)*12);
+    --setTimeHour: 4;
+    --setTimeMinute: 40;
+    --timeShiftHour: calc(var(--setTimeHour)*var(--hour));
+    --timeShiftMinute: calc(var(--setTimeMinute)*var(--minute));
+}
+
+@keyframes rotate{
+    from{transform: rotate(0);}
+    to{transform: rotate(1turn);}
+}
+
+@keyframes colorChange {
+    0%{background-image: linear-gradient(rgb(204, 43, 94), rgb(117, 58, 136));}
+    25%{background-image: linear-gradient(rgb(170, 75, 107), rgb(107, 107, 131), rgb(59, 141, 153));}
+    50%{background-image: linear-gradient(rgb(254, 171, 94), rgb(199, 121, 208), rgb(75, 192, 200));}
+    75%{background-image: linear-gradient(rgb(251, 0, 255), rgb(0, 219, 222));}
+    100%{background-image: linear-gradient(rgb(255, 0, 204), rgb(51, 51, 153));}
+}
+
+.face{
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    position: relative;
+    background-color: rgb(255, 251, 0);
+    animation: colorChange ease var(--second) infinite;
+    transform: rotate(180deg);
+    margin-left: 400px;
+    margin-top: 50px;
+    padding: 150px;
+}
+
+.second{
+    width: 5px;
+    height: 380px;
+    background-color: white;
+    animation: rotate steps(60) var(--minute) infinite;
+    mix-blend-mode: overlay;
+}
+
+.minute{
+    width: 10px;
+    height: 360px;
+    background-color: rgb(238, 255, 0);
+    animation: rotate steps(60) var(--hour) infinite;
+    animation-delay: calc(var(--timeShiftMinute)*-1);
+
+}
+
+.hour{
+    width: 10px;
+    height: 210px;
+    background-color: rgb(0, 0, 0);
+    animation: rotate steps(12) var(--half) infinite;
+    animation-delay: calc(var(--timeShiftHour)*-1);
+}
+.hand{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: center 0;
+}
+
+.text {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+    font-family : Avenir;
+    margin: 20px;
+    transform: rotate(180deg);
+}
+
+.headtext {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-align: left;
+    font-family : Avenir;
+    margin: 20px;
+}
