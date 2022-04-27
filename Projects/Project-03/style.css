@@ -1,0 +1,26 @@
+.blue-circle{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	border-radius: 100%;
+}
+
+.red-circle{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	border-radius: 100%;
+}
+
+.popup{
+	display: none;
+}
+
+.show{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-color: #DADADA;
+	border-radius: 5px;
+	padding: 20px;
+}

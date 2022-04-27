@@ -7,3 +7,31 @@ function UpdateFlyingObj (event) {
 	flyingObj.style.top = mouseY + "px";
 
 }
+
+$(document).ready(function(){
+
+	$('.blue-circle').draggable();
+
+	$('.red-circle').droppable({
+		drop:function(){
+			$('.popup')
+			.addClass('show')
+			.add('p')
+			.html('loremispum');
+		}
+	});
+});
+
+Vue.component('falling', {
+	template: "#falling",
+  })
+  
+  new Vue({
+	el: '#app',
+	data() {
+	  return {
+	  }
+	},
+	computed:{},
+	methods:{}
+});

@@ -2,16 +2,50 @@ body{
     background-color: rgb(35, 41, 95);
 }
 
-img.sticky{
-    position: sticky;
-    top: 0;
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
+img.rotate {
+    animation: rotation 2s infinite linear;
+}
 
-#rectangle{
-    width: 100%;
-    height: 1000px;
-    background-color: rgb(35, 41, 95);
+.container{
+    padding: 50px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotation {
+    0% {transform: rotate(0deg);}
+    10% {transform: rotate(45deg);}
+    20% {transform: rotate(180deg);}
+    40% {transform: rotate(225deg);}
+    60% {transform: rotate(270deg);}
+    80% {transform: rotate(315deg);}
+    100% {transform: rotate(359deg);}
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 #rectangle1{
@@ -34,12 +68,38 @@ img.sticky{
     font-family : Avenir;
 }
 
-.headtext {
+.headtext{
     color: rgb(255, 145, 0);
     font-size: 100px;
-    width: 30%;
-    text-align: left;
-    margin-left: 1150px;
-    margin-right: 50px;
+    text-align: center;
     font-family : Avenir;
+}
+
+.text2 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    position: absolute;
+    width: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family : Avenir;
+}
+
+.overlay {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 250px;
+    width: 250px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #eeff00;
+}
+  
+.container:hover .overlay {
+    opacity: 1;
 }

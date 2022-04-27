@@ -2,7 +2,7 @@ img{
     padding: 0.5em; 
     height: "auto";
     position: absolute;
-    top: 0;
+    top: 650px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -19,16 +19,103 @@ body{
     margin: 20px;
 }
 
-#rectangle{
-    width: 400px;
-    height: 500px;
-    background-color: rgb(255, 0, 149);
+.red-square{
+	width: 300px;
+	height: 600px;
+	background-color: rgb(65, 10, 10);
+    display: inline-block;
+    mix-blend-mode: overlay;
+    margin-top: 140px;
+    margin-left: 50px;
+}
+
+.black-square{
+	width: 300px;
+	height: 600px;
+	background-color: rgb(2, 11, 134);
+    display: inline-block;
+    mix-blend-mode: overlay;
+    margin-top: 140px;
+    margin-left: 40px;
+}
+
+.green-square{
+	width: 300px;
+	height: 600px;
+	background-color: rgb(116, 28, 90);
+    display: inline-block;
+    mix-blend-mode: overlay;
+    margin-top: 140px;
+    margin-left: 40px;
+}
+
+.pink-square{
+	width: 300px;
+	height: 600px;
+	background-color: rgb(13, 73, 63);
+    display: inline-block;
+    mix-blend-mode: overlay;
+    margin-top: 140px;
+    margin-left: 40px;
+}
+
+.gold-square{
+	width: 300px;
+	height: 600px;
+	background-color: rgb(77, 26, 82);
+    display: inline-block;
+    mix-blend-mode: overlay;
+    margin-top: 140px;
+    margin-left: 40px;
+}
+
+.popup{
+	display: none;
+    transition: .5s ease;
+}
+
+.show{
+	display: inline-block;
+	width: 50%;
+	height: 50px;
+	background-color: #ffffff;
+    mix-blend-mode: overlay;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+	padding: 20px;
+    font-family : Avenir;
+    font-size: 20px;
+}
+
+.text2 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family : Avenir;
     mix-blend-mode: overlay;
 }
 
-#rectangle1{
-    width: 400px;
-    height: 500px;
-    background-color: rgb(255, 217, 0);
+.headtext{
+    color: rgb(208, 255, 0);
+    font-size: 100px;
+    text-align: center;
+    font-family : Avenir;
+}
+
+.text3 {
+    color: rgb(43, 255, 0);
+    font-size: 50px;
+    position: absolute;
+    text-align: center;
     mix-blend-mode: overlay;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family : Avenir;
 }

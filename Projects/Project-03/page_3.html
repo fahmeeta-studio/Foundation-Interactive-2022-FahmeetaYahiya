@@ -11,60 +11,101 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <script>
-    $(function(){
-        $("img" ).draggable();
+    $(document).ready(function(){
+
+        $('img').draggable();
+        $('.red-square').droppable({
+            drop:function(){
+            $('.popup')
+            .addClass('show')
+            .add('p')
+            .html('i miss that JACKFRUIT curry cooked in a clay pot but the sweet kind on its own is just as good! i specially remember wappa loving the fried JACKFRUIT seeds.');
+            }
+        });
+    });
+  </script>
+  <script>
+    $(document).ready(function(){
+
+        $('img').draggable();
+        $('.black-square').droppable({
+            drop:function(){
+            $('.popup')
+            .addClass('show')
+            .add('p')
+            .html('it is such sweet joy when we find PASSION FRUIT in california and we are willing to pay $8 a piece every time. even when we do find it, it is never as sweet or perfect like the ones back home.');
+            }
+        });
+    });
+  </script>
+  <script>
+    $(document).ready(function(){
+    
+        $('img').draggable();
+        $('.green-square').droppable({
+            drop:function(){
+            $('.popup')
+            .addClass('show')
+            .add('p')
+            .html('MANGOES always taste sweeter when its cut up and sprinkled with spices. MANGO curry is sweet and sour and just hits different but is it just me or does all MANGO curries taste the same?');
+            }
+        });
+    });
+  </script>
+  <script>
+    $(document).ready(function(){
+    
+        $('img').draggable();
+        $('.pink-square').droppable({
+            drop:function(){
+            $('.popup')
+            .addClass('show')
+            .add('p')
+            .html('i remember you hated the process of peeling the MANGOSTEEN to get to the sweet center but i always found the challenge so worth it. i dont think i have had a sri lankan mangosteen in 13 years.');
+            }
+        });
+    });
+  </script>
+  <script>
+    $(document).ready(function(){
+    
+        $('img').draggable();
+        $('.gold-square').droppable({
+            drop:function(){
+            $('.popup')
+            .addClass('show')
+            .add('p')
+            .html('the sweet taste of the KING COCONUT water coupled with the KING COCONUT flesh in a bowl is one of the fondest memories i have of home.');
+            }
+        });
     });
   </script>
 </head>
 <body> 
-    
-
-    <div id="img">
-        <img src="images/edited jackfruit.png" alt="Jack Fruit" class="image" width="850px">
-        <img src="images/coconut.png" alt="Coconut" class="image" width="650px">
-        <img src="images/mangoes.png" alt="Mango" class="image" width="800px">
-        <img src="images/mangosteen.png" alt="Mangosteen" class="image" width="380px">
-        <img src="images/edited passion fruit.png" alt="Passion Fruit" class="image" width="330px">
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div class="square">
-        <div id="rectangle"></div>
-        <div id="rectangle1"></div>
-        <div id="rectangle"></div>
-        <div id="rectangle1"></div>
-        <div id="rectangle"></div>
-        <div id="rectangle1"></div>
-    </div>
- 
+    <a href="page_4.html">
+        <img src="images/flag.png" alt="Seller" class="image" width="100px" height="auto" style="position:absolute; top:35px; left:35px">
+    </a>
+    <div class="text2" style="position: absolute; left:540px; top:180px"> Passion Fruit</div>
+    <div class="text2" style="position: absolute; left:190px; top:180px"> Jackfruit</div>
+    <div class="text2" style="position: absolute; left:885px; top:180px"> Mango</div>
+    <div class="text2" style="position: absolute; left:1230px; top:180px"> Mangosteen</div>
+    <div class="text2" style="position: absolute; left:1565px; top:180px"> King</div>
+    <div class="text2" style="position: absolute; left:1565px; top:220px"> Coconut</div>
+    <div class="text3"> drag each fruit to the correct box</div>
+    <div class="red-square"></div>
+    <div class="black-square"></div>
+    <div class="green-square"></div>
+    <div class="pink-square"></div>
+    <div class="gold-square"></div>
+    <div>
+        <img src="images/edited jackfruit.png" alt="Jack Fruit" class="image" width="450px" style="position:absolute; left:50px">
+        <img src="images/edited passion fruit.png" alt="Passion Fruit" class="image" width="230px">
+        <img src="images/mangoes.png" alt="Mango" class="image" width="400px">
+        <img src="images/coconut.png" alt="Coconut" class="image" width="300px">
+        <img src="images/mangosteen.png" alt="Mangosteen" class="image" width="200px">
+    </div>	
+    <div class="popup" style="position: absolute; left:850px; top:750px"></div>
+	<div class="headtext" style="position:absolute; top:850px"> sweet summers</div>
  
 </body>
 </html>

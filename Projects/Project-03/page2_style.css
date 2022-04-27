@@ -19,7 +19,11 @@
 
 body{
   background-color: rgb(214, 185, 185);
-  background-image: linear-gradient(rgb(49, 46, 105), rgb(0, 0, 0));
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(21, 30, 161));
+}
+
+#flying{
+  position: fixed; 
 }
 
 .container {
@@ -31,6 +35,26 @@ body{
 
 .image {
   display: flex;
+}
+
+.flower {
+  display: flex;
+}
+
+.vesak {
+  animation: sway1 16s infinite;
+  transform-origin: 50% 100% 0;
+  display: flex;
+}
+
+.flower:hover {
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(260deg) brightness(95%) contrast(90%);
+  mix-blend-mode: hard-light;
+}
+
+.tuktuk {
+  display: flex;
+  animation: move 7s infinite linear;
 }
 
 .overlay {
@@ -52,16 +76,237 @@ body{
 
 .text {
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 15px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  font-family : Avenir;
 }
 
-#rectangle{
-  width: 100%;
-  height: 130px;
-  background-color: rgb(0, 0, 0);
+.pink-square{
+	width: 100%;
+	height: 10%;
+	background-color: rgb(0, 0, 0);
+}
+
+@keyframes move{  
+  from {
+    left: 99%
+  }
+  to {
+   left:  -60%
+  }
+}
+
+@keyframes sway1 {
+  0%, 100%{ transform: rotate(-8deg);}
+  50%{ transform: rotate(6deg); }
+}
+
+.falling-container{
+	width: 100vw;
+	height: 100%;
+	z-index: 2;
+}
+
+.shift-10{
+	left: 20%;
+}
+
+.shift-20{
+	left: 11%;
+}
+
+.shift-30{
+	left: 14%;
+}
+
+.shift-40{
+	left: 18%;
+}
+
+.shift-50{
+	left: 25%;
+}
+
+.shift-60{
+	left: 23%;
+}
+
+
+
+.shift-70{
+	left: 30%;
+}
+
+.shift-80{
+	left: 21%;
+}
+
+.shift-90{
+	left: 24%;
+}
+
+.shift-100{
+	left: 28%;
+}
+
+.shift-110{
+	left: 35%;
+}
+
+.shift-120{
+	left: 33%;
+}
+
+.fall{
+	width: 100px;
+	animation: falling 10s ease-out forwards;
+	position: absolute;
+	bottom: 110%;
+}
+
+.fall-2{
+	width: 100px;
+	animation: falling 10s ease-out 2s forwards;
+	position: absolute;
+	bottom: 110%;
+}
+
+.fall-3{
+	width: 100px;
+	animation: falling 10s ease-out 3s forwards;
+	position: absolute;
+	bottom: 110%;
+}
+
+.fall-4{
+	width: 100px;
+	animation: falling 10s ease-out 4s forwards;
+	position: absolute;
+	bottom: 110%;
+}
+
+.fall-5{
+	width: 100px;
+	animation: falling 10s ease-out 5s forwards;
+	position: absolute;
+	bottom: 110%;
+}
+
+.fall-6{
+	width: 100px;
+	animation: falling 10s ease-out 6s forwards;
+	position: absolute;
+	bottom: 110%;
+}
+
+@keyframes falling{
+	0%{
+		transform: translateX(-200px) rotate(20deg);
+		bottom: 110%;	
+	}
+	
+	20%{
+		transform: translateX(360px) rotate(-40deg);
+		bottom: 90%;	
+
+	}
+
+	40%{
+		transform: translateX(0px) rotate(60deg);
+		bottom: 70%;
+
+	}
+
+	60%{
+		transform: translateX(400px) rotate(-50deg);
+		bottom: 50%;
+
+	}
+
+	80%{
+		transform: translateX(50px) rotate(40deg);
+		bottom: 30%;
+
+	}
+
+	100%{
+		transform: translateX(300px) rotate(-40deg);
+		bottom: 0%;
+
+	}
+
+  
+}
+
+.sleep {
+  position: absolute;
+  margin-bottom: 600px;
+  margin-left: 300px;
+  z-index: 2;
+  color: rgb(255, 255, 255);
+  font-family : Avenir;
+  font-size: 40px;
+}
+
+#sleep1 {
+  -webkit-animation: sleep1 4s ease-out infinite;
+  animation: sleep1 4s ease-out infinite;
+}
+
+#sleep3 {
+  -webkit-animation: sleep1 4s ease-out 1s infinite;
+  animation: sleep1 4s ease-out 1s infinite;
+}
+
+@-webkit-keyframes sleep1 {
+  0% {transform: translateY(0) translateX(0); font-size:35px;}
+  100% {transform: translateY(-200px) translateX(-20px); font-size:45px;}
+}
+
+@keyframes sleep1 {
+  0% {transform: translateY(0) translateX(0); font-size:35px;}
+  100% {transform: translateY(-200px) translateX(-20px); font-size:45px;}
+}
+
+#sleep2 {
+  -webkit-animation: sleep2 4s ease-out 0.5s infinite;
+  animation: sleep2 4s ease-out 0.5s infinite;
+}
+
+#sleep4 {
+  -webkit-animation: sleep2 4s ease-out 1.5s infinite;
+  animation: sleep2 4s ease-out 1.5s infinite;
+}
+
+@-webkit-keyframes sleep2 {
+  0% {transform: translateY(0) translateX(0); font-size:35px;}
+  100% {transform: translateY(-200px) translateX(20px); font-size:45px;}
+}
+
+@keyframes sleep2 {
+  0% {transform: translateY(0) translateX(0); font-size:35px;}
+  100% {transform: translateY(-200px) translateX(20px); font-size:45px;}
+}
+
+.text2 {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  position: absolute;
+  width: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-family : Avenir;
+}
+
+.headtext{
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+  text-align: center;
+  font-family : Avenir;
 }
