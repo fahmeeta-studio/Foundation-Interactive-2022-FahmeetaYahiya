@@ -293,7 +293,7 @@ body{
 }
 
 .text2 {
-  color: rgb(255, 255, 255);
+  color: rgb(241, 243, 146);
   font-size: 25px;
   position: absolute;
   width: 25%;
@@ -305,7 +305,7 @@ body{
 }
 
 .headtext{
-  color: rgb(255, 255, 255);
+  color: rgb(251, 255, 0);
   font-size: 100px;
   text-align: center;
   font-family : Avenir;

@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(35, 41, 95);
+    background-color: rgb(47, 0, 255);
 }
 
 img{
@@ -59,7 +59,7 @@ img.rotate {
 }
 
 .text {
-    color: rgb(255, 145, 0);
+    color: rgb(255, 208, 0);
     font-size: 20px;
     width: 30%;
     text-align: left;
@@ -69,14 +69,15 @@ img.rotate {
 }
 
 .headtext{
-    color: rgb(255, 145, 0);
+    color: rgb(255, 208, 0);
     font-size: 100px;
     text-align: center;
     font-family : Avenir;
+    
 }
 
 .text2 {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 208, 0);
     font-size: 20px;
     position: absolute;
     width: 25%;
